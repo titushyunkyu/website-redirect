@@ -1,9 +1,228 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv="refresh" content="0; url=https://tituslee.com" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Domain Updated | Titus Lee</title>
+  <meta name="description" content="This domain has moved. Please visit tituslee.com." />
+  <link rel="canonical" href="https://tituslee.com/" />
+
+  <!-- Auto-redirect (change 5 to any # seconds you want) -->
+  <meta http-equiv="refresh" content="6; url=https://tituslee.com/" />
+
+  <style>
+    :root{
+      --bg0:#0b1020;
+      --bg1:#0f1730;
+      --card:#0f1a35cc;
+      --border:#22335f;
+      --text:#e6e9f2;
+      --muted:#a8b0c6;
+      --accent:#6ea8ff;
+      --accent2:#7c5cff;
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(900px 600px at 20% 15%, rgba(110,168,255,.22), transparent 60%),
+        radial-gradient(900px 600px at 80% 25%, rgba(124,92,255,.18), transparent 60%),
+        radial-gradient(1000px 800px at 55% 110%, rgba(110,168,255,.10), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      padding: 24px;
+    }
+
+    .wrap{
+      width: min(720px, 100%);
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid rgba(34,51,95,.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px 28px;
+      backdrop-filter: blur(10px);
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(34,51,95,.9);
+      background: rgba(15,26,53,.55);
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: .2px;
+    }
+
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 18px rgba(110,168,255,.35);
+    }
+
+    h1{
+      margin: 16px 0 10px;
+      font-size: clamp(26px, 3.4vw, 36px);
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+
+    p{
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .btn{
+      appearance:none;
+      border: 0;
+      cursor:pointer;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 650;
+      font-size: 15px;
+      transition: transform .08s ease, box-shadow .18s ease, background .18s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+
+    .btn-primary{
+      color: #0a1022;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 12px 30px rgba(110,168,255,.22);
+    }
+
+    .btn-primary:hover{
+      transform: translateY(-1px);
+      box-shadow: 0 16px 36px rgba(110,168,255,.28);
+    }
+
+    .btn-secondary{
+      color: var(--text);
+      background: rgba(15,26,53,.65);
+      border: 1px solid rgba(34,51,95,.9);
+    }
+
+    .btn-secondary:hover{
+      transform: translateY(-1px);
+      background: rgba(15,26,53,.85);
+    }
+
+    .hint{
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(168,176,198,.9);
+    }
+
+    .count{
+      font-variant-numeric: tabular-nums;
+      color: var(--text);
+    }
+
+    .footer{
+      margin-top: 14px;
+      text-align:center;
+      color: rgba(168,176,198,.75);
+      font-size: 12px;
+    }
+
+    code{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: rgba(230,233,242,.95);
+    }
+  </style>
 </head>
+
 <body>
-Redirecting...
+  <main class="wrap">
+    <section class="card" role="region" aria-label="Domain updated notice">
+      <div class="badge"><span class="dot" aria-hidden="true"></span> Domain Updated</div>
+
+      <h1>This site has moved to <span style="color: var(--accent);">tituslee.com</span></h1>
+
+      <p>
+        Thanks for visiting. My portfolio is now hosted at
+        <strong>tituslee.com</strong> for a cleaner and more consistent link across applications.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="https://tituslee.com/" rel="noopener">
+          Go to tituslee.com
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <button class="btn btn-secondary" type="button" id="copyBtn">
+          Copy new link
+          <span aria-hidden="true">⧉</span>
+        </button>
+      </div>
+
+      <div class="hint">
+        Redirecting automatically in <span class="count" id="countdown">6</span> seconds…
+        <br />
+        If you aren’t redirected, click the button above.
+      </div>
+    </section>
+
+    <div class="footer">
+      Titus Hyunkyu Lee • <code>tituslee.com</code>
+    </div>
+  </main>
+
+  <script>
+    // Countdown (match the meta refresh seconds)
+    let seconds = 6;
+    const el = document.getElementById("countdown");
+    const timer = setInterval(() => {
+      seconds--;
+      if (el) el.textContent = String(seconds);
+      if (seconds <= 0) clearInterval(timer);
+    }, 1000);
+
+    // Copy link button
+    document.getElementById("copyBtn").addEventListener("click", async () => {
+      const url = "https://tituslee.com/";
+      try {
+        await navigator.clipboard.writeText(url);
+        const btn = document.getElementById("copyBtn");
+        const old = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(() => (btn.textContent = "Copy new link ⧉"), 1200);
+      } catch (e) {
+        // Fallback
+        prompt("Copy this link:", url);
+      }
+    });
+  </script>
 </body>
 </html>
