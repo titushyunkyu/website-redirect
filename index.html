@@ -9,19 +9,19 @@
   <link rel="canonical" href="https://tituslee.com/" />
 
   <!-- Auto-redirect (change 5 to any # seconds you want) -->
-  <meta http-equiv="refresh" content="6; url=https://tituslee.com/" />
+  <meta http-equiv="refresh" content="10; url=https://tituslee.com/" />
 
   <style>
     :root{
-      --bg0:#0b1020;
-      --bg1:#0f1730;
+      --bg0: #0b1020;
+      --bg1: #0f1730;
       --card:#0f1a35cc;
       --border:#22335f;
-      --text:#e6e9f2;
-      --muted:#a8b0c6;
-      --accent:#6ea8ff;
-      --accent2:#7c5cff;
-      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --text:rgb(240, 246, 252);
+      --muted:#969ba1;
+      --accent:#3d549e;
+      --accent2:#30306b;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
       --radius: 18px;
     }
 
@@ -47,7 +47,6 @@
     }
 
     .card{
-      background: var(--card);
       border: 1px solid rgba(34,51,95,.9);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -105,22 +104,22 @@
       justify-content:center;
       gap:10px;
       padding: 12px 16px;
-      border-radius: 12px;
+      border-radius: 20px;
       font-weight: 650;
       font-size: 15px;
-      transition: transform .08s ease, box-shadow .18s ease, background .18s ease;
+      transition: transform 0.4s ease, box-shadow .18s ease, background .18s ease;
       user-select:none;
       white-space:nowrap;
     }
 
     .btn-primary{
-      color: #0a1022;
+      color: var(--text);
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       box-shadow: 0 12px 30px rgba(110,168,255,.22);
     }
 
     .btn-primary:hover{
-      transform: translateY(-1px);
+      transform: translateY(-5px);
       box-shadow: 0 16px 36px rgba(110,168,255,.28);
     }
 
@@ -131,7 +130,7 @@
     }
 
     .btn-secondary:hover{
-      transform: translateY(-1px);
+      transform: translateY(-5px);
       background: rgba(15,26,53,.85);
     }
 
@@ -171,24 +170,22 @@
       <h1>This site has moved to <span style="color: var(--accent);">tituslee.com</span></h1>
 
       <p>
-        Thanks for visiting. My portfolio is now hosted at
+        Thank you for visiting. My portfolio is now hosted at
         <strong>tituslee.com</strong> for a cleaner and more consistent link across applications.
       </p>
 
       <div class="actions">
         <a class="btn btn-primary" href="https://tituslee.com/" rel="noopener">
           Go to tituslee.com
-          <span aria-hidden="true">↗</span>
         </a>
 
         <button class="btn btn-secondary" type="button" id="copyBtn">
           Copy new link
-          <span aria-hidden="true">⧉</span>
         </button>
       </div>
 
       <div class="hint">
-        Redirecting automatically in <span class="count" id="countdown">6</span> seconds…
+        Redirecting automatically in <span class="count" id="countdown">10</span> seconds…
         <br />
         If you aren’t redirected, click the button above.
       </div>
@@ -201,7 +198,7 @@
 
   <script>
     // Countdown (match the meta refresh seconds)
-    let seconds = 6;
+    let seconds = 10;
     const el = document.getElementById("countdown");
     const timer = setInterval(() => {
       seconds--;
@@ -219,7 +216,6 @@
         btn.textContent = "Copied!";
         setTimeout(() => (btn.textContent = "Copy new link ⧉"), 1200);
       } catch (e) {
-        // Fallback
         prompt("Copy this link:", url);
       }
     });
